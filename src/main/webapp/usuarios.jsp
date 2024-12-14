@@ -8,8 +8,7 @@
 </head>
 <body>
 
-<form action="login" method="POST">
-    <input type="hidden" name="_method" value="DELETE">
+<form action="login" method="GET">
     <button type="submit" class="btn btn-danger">Cerrar Sesion</button>
 </form>
 
