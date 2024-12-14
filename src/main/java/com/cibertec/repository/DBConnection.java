@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class DBConnection {
 
-    private static final String URL = "jdbc:sqlserver://localhost:1434;database=T2LP;encrypt=false";
+    private static final String URL = "jdbc:sqlserver://localhost:1434;database=cibertec;encrypt=false";
     private static final String USER = "sa";
     private static final String PASSWORD = "sql";
 

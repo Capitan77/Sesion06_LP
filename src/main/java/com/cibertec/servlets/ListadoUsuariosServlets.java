@@ -4,6 +4,7 @@ import com.cibertec.dao.UsuarioDao;
 import com.cibertec.dao.impl.UsuarioDaoImpl;
 import com.cibertec.models.Usuario;
 import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -12,6 +13,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
+@WebServlet(name="ListadoUsuariosServlets", urlPatterns ="/ListadoUsuariosServlets" )
 public class ListadoUsuariosServlets extends HttpServlet {
 
     UsuarioDao usuarioDao = new UsuarioDaoImpl();

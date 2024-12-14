@@ -23,7 +23,7 @@ public class UsuarioDaoImpl implements UsuarioDao {
 
         List<Usuario> listaRespuesta =  new ArrayList<>();
 
-        String query = "SELECT id, nombre, apellido, correo as email, clave FROM Usuario;";
+        String query = "SELECT id, nombre, apellido, correo as email, clave FROM Usuarios;";
 
         try(
                 Connection connection = DBConnection.getConnection();
@@ -49,7 +49,7 @@ public class UsuarioDaoImpl implements UsuarioDao {
 
     @Override
     public Usuario verificarCredenciales(String correo, String clave) throws SQLException {
-        String query = "SELECT id, nombre, apellido, correo, clave FROM Usuario WHERE correo=? AND clave=?;";
+        String query = "SELECT id, nombre, apellido, correo, clave FROM Usuarios WHERE correo=? AND clave=?;";
         try(
                 Connection connection = DBConnection.getConnection();
                 PreparedStatement statement = connection.prepareStatement(query);
