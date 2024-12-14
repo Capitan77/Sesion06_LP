@@ -2,6 +2,6 @@
     <display-name>S06</display-name>
     <welcome-file-list>
 
-        <welcome-file>ListadoUsuariosServlets</welcome-file>
+        <welcome-file>usuarios</welcome-file>
     </welcome-file-list>
 </web-app>
