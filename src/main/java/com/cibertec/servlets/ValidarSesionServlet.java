@@ -49,4 +49,13 @@ public class ValidarSesionServlet extends HttpServlet {
         }
 
     }
+
+    @Override
+    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        HttpSession httpSession = req.getSession(false);
+        if(httpSession != null) {
+            httpSession.invalidate();
+        }
+        resp.sendRedirect("login.jsp");
+    }
 }
